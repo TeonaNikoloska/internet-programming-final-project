@@ -39,6 +39,24 @@
       "difficulty": "Medium",
       "imageUrl": "https://veganwithgusto.com/wp-content/uploads/2021/05/spicy-spaghetti-arrabbiata.jpg",
       "isFavorite": true
+    },
+    {
+      "id": "494b",
+      "name": "Pizza",
+      "description": "pizza",
+      "ingredients": [
+        "Dough",
+        "Mushrooms",
+        "Cheese"
+      ],
+      "steps": [
+        ""
+      ],
+      "category": "Lunch",
+      "prepTime": 35,
+      "difficulty": "Medium",
+      "imageUrl": "",
+      "isFavorite": false
     }
   ]
 }
