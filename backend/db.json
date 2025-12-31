@@ -17,7 +17,7 @@
       "category": "Breakfast",
       "prepTime": 20,
       "difficulty": "Easy",
-      "imageUrl": "assets/images/pancakes.jpg",
+      "imageUrl": "https://www.inspiredtaste.net/wp-content/uploads/2025/07/Pancake-Recipe-1.jpg",
       "isFavorite": false
     },
     {
@@ -37,7 +37,7 @@
       "category": "Dinner",
       "prepTime": 40,
       "difficulty": "Medium",
-      "imageUrl": "assets/images/spaghetti.jpg",
+      "imageUrl": "https://veganwithgusto.com/wp-content/uploads/2021/05/spicy-spaghetti-arrabbiata.jpg",
       "isFavorite": true
     }
   ]
