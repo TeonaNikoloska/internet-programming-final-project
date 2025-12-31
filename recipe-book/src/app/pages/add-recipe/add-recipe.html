@@ -1,0 +1,60 @@
+<h2 _ngcontent-c0> Add New Recipe </h2>
+
+<form (ngSubmit)="submit()">
+  <label>
+    Name:
+    <input [(ngModel)]="recipe.name" name="name" required />
+  </label>
+
+  <label>
+    Description:
+    <input [(ngModel)]="recipe.description" name="description" required />
+  </label>
+
+  <label>
+    Category:
+    <select [(ngModel)]="recipe.category" name="category">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+      <option>Dessert</option>
+    </select>
+  </label>
+
+  <label>
+    Prep Time (minutes):
+    <input type="number" [(ngModel)]="recipe.prepTime" name="prepTime" />
+  </label>
+
+  <label>
+    Difficulty:
+    <select [(ngModel)]="recipe.difficulty" name="difficulty">
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+  </label>
+
+  <label>
+    Image URL:
+    <input [(ngModel)]="recipe.imageUrl" name="imageUrl" />
+  </label>
+
+  <div>
+    <h3>Ingredients</h3>
+    <div *ngFor="let i of recipe.ingredients; let idx = index">
+      <input [(ngModel)]="recipe.ingredients[idx]" [name]="'ingredient'+idx" />
+    </div>
+    <button type="button" (click)="addIngredient()">Add Ingredient</button>
+  </div>
+
+  <div>
+    <h3>Steps</h3>
+    <div *ngFor="let s of recipe.steps; let idx = index">
+      <input [(ngModel)]="recipe.steps[idx]" [name]="'step'+idx" />
+    </div>
+    <button type="button" (click)="addStep()">Add Step</button>
+  </div>
+
+  <button type="submit">Add Recipe</button>
+</form>

@@ -1,0 +1,117 @@
+/* Container for search bar + category filter */
+.recipes-filters {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  flex-wrap: wrap;         /* wrap on small screens */
+  gap: 1.5rem;             /* spacing between search bar and filter */
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+/* Ensure search bar fills reasonable space but doesn't stretch too much */
+app-search-bar {
+  flex: 1 1 250px;   /* grow/shrink, min width 250px */
+  max-width: 400px;  /* optional max width */
+}
+
+/* Category filter sizing */
+app-category-filter {
+  flex: 0 1 auto;   /* natural width for buttons */
+}
+
+/* Category filter buttons */
+app-category-filter button {
+  padding: 0.5rem 1.2rem;
+  background-color: #fff8f2; /* warm cream */
+  border: 2px solid #a03e35; /* deep spice red */
+  border-radius: 8px;
+  font-weight: 600;
+  color: #a03e35;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+app-category-filter button:hover {
+  background-color: #f64f28;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+app-category-filter button.active {
+  background-color: #a03e35;
+  color: #fff;
+}
+
+/* Recipes Grid */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;      /* center grid inside container */
+  padding: 2rem;
+  max-width: 100px;            /* limit total grid width */
+  margin: 0 auto;               /* center grid on page */
+}
+
+/* Recipe card adjustments */
+app-recipe-card {
+  display: block;
+  justify-content: space-between;
+  min-height: 280px;
+  max-height: 320px;
+  border-radius: 12px;
+  background-color: #fff8f2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+app-recipe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Skeleton cards */
+.recipe-skeleton {
+  height: 280px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    #f3e9e1 25%,
+    #f8f0e8 50%,
+    #f3e9e1 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .recipes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  app-recipe-card {
+    min-height: 240px;
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .recipes-filters {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .recipes-grid {
+    grid-template-columns: 1fr; /* stack cards vertically on mobile */
+    padding: 0 1rem;
+  }
+}

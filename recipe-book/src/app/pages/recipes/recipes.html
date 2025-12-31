@@ -1,0 +1,19 @@
+<div class="recipes-filters">
+  <app-search-bar></app-search-bar>
+  <app-category-filter (categoryChange)="onCategoryChange($event)"></app-category-filter>
+</div>
+
+<div class="recipes-grid">
+  <ng-container *ngIf="recipes$ | async as recipes; else loading">
+    <app-recipe-card
+      *ngFor="let recipe of filteredRecipes(recipes)"
+      [recipe]="recipe">
+    </app-recipe-card>
+  </ng-container>
+</div>
+
+<ng-template #loading>
+  <div class="recipes-grid">
+    <div *ngFor="let n of [1,2,3,4,5,6]" class="recipe-skeleton"></div>
+  </div>
+</ng-template>

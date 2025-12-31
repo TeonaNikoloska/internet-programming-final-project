@@ -1,0 +1,28 @@
+/* Base Body */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background: url('assets/images/recipe-bkg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3b2f2f; /* rich dark brown for text */
+}
+
+/* Overlay so text does not blend into background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 249, 243, 0.85); /* warm cream overlay */
+  z-index: -1;
+}
+
+/* Scrollbar theme (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a03e35; /* deep spice red */
+  border-radius: 4px;
+}

@@ -1,0 +1,33 @@
+/* Search input */
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: 2px solid #a03e35; /* deep spice red border */
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  background-color: #fff8f2; /* warm cream background */
+  color: #3b2f2f;
+}
+
+/* Placeholder styling */
+input[type="text"]::placeholder {
+  color: #b07a6b; /* soft muted spice color */
+  font-style: italic;
+}
+
+/* Focus effect */
+input[type="text"]:focus {
+  border-color: #f64f28; /* vibrant spice red */
+  box-shadow: 0 0 8px rgba(246, 79, 40, 0.3); /* subtle glow */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  input[type="text"] {
+    max-width: 100%;
+  }
+}

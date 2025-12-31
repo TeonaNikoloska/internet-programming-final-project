@@ -1,0 +1,5 @@
+<select (change)="onChange($event)">
+  <option *ngFor="let c of categories" [value]="c">
+    {{ c }}
+  </option>
+</select>

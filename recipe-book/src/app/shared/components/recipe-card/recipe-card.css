@@ -1,0 +1,39 @@
+.recipe-card {
+  background-color: #fff8f2; /* warm cream */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #a03e35; /* spice red accent */
+}
+
+.recipe-card p {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  color: #4a3a3a; /* softer than pure black */
+}
+
+.recipe-card .btn {
+  margin: 1rem;
+  background-color: #f64f28; /* vibrant red */
+  color: #fff;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}

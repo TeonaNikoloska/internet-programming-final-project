@@ -1,0 +1,10 @@
+<h2>My Favorite Recipes</h2>
+
+<div class="recipes-grid" *ngIf="favorites.length > 0; else empty">
+  <app-recipe-card *ngFor="let recipe of favorites" [recipe]="recipe">
+  </app-recipe-card>
+</div>
+
+<ng-template #empty>
+  <p>No favorites yet. Add some from the recipes page!</p>
+</ng-template>

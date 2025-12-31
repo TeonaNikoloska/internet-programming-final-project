@@ -1,0 +1,38 @@
+form + h2,
+:host h2 {
+  text-align: center;
+  margin: 1.8rem 0;
+  color: #a03e35;
+}
+
+form {
+  max-width: 620px;
+  margin: 2rem auto;
+  padding: 2.2rem;
+  background-color: #fff8f2; /* creamy card */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.13);
+}
+
+form label {
+  display: block;
+  margin: 1rem 0 0.4rem;
+  font-weight: 600;
+  color: #4a3a3a;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 6px;
+  border: 1px solid #cbb8a0; /* soft warm border */
+  margin-bottom: 0.7rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background-color: #f64f28;
+  color: #fff;
+  margin-top: 1rem;
+}

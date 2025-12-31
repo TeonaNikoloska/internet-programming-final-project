@@ -1,0 +1,72 @@
+/* Container */
+div[ng-reflect-ng-if] {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff8f2; /* warm cream background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Recipe title */
+h2 {
+  color: #a03e35; /* deep spice red */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Recipe image */
+img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+/* Description */
+p {
+  font-size: 1rem;
+  color: #4a3a3a;
+  margin-bottom: 1.5rem;
+}
+
+/* Section headers */
+h3 {
+  color: #f64f28; /* vibrant spice red */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #f64f28;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+/* Ingredients and Steps lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3b2f2f;
+  font-size: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  div[ng-reflect-ng-if] {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="recipe-card">
+  <img [src]="recipe.imageUrl" [alt]="recipe.name" />
+
+  <h3>{{ recipe.name }}</h3>
+  <p>{{ recipe.description }}</p>
+
+  <a [routerLink]="['/recipes', recipe.id]" class="btn">
+    View More
+  </a>
+
+  <button (click)="toggleFavorite(recipe)">❤️</button>
+</div>
