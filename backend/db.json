@@ -1,0 +1,44 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Pancakes",
+      "description": "Fluffy breakfast pancakes",
+      "ingredients": [
+        "2 eggs",
+        "1 cup flour",
+        "1 cup milk"
+      ],
+      "steps": [
+        "Mix ingredients",
+        "Heat pan",
+        "Cook pancakes"
+      ],
+      "category": "Breakfast",
+      "prepTime": 20,
+      "difficulty": "Easy",
+      "imageUrl": "assets/images/pancakes.jpg",
+      "isFavorite": false
+    },
+    {
+      "id": "2",
+      "name": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta dish",
+      "ingredients": [
+        "Spaghetti",
+        "Tomato sauce",
+        "Minced meat"
+      ],
+      "steps": [
+        "Boil pasta",
+        "Prepare sauce",
+        "Mix together"
+      ],
+      "category": "Dinner",
+      "prepTime": 40,
+      "difficulty": "Medium",
+      "imageUrl": "assets/images/spaghetti.jpg",
+      "isFavorite": true
+    }
+  ]
+}
